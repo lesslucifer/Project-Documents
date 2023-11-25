@@ -9,10 +9,10 @@
 - Data standardlization: Job chuẩn hoá, làm sạch raw data. Chuyển hoá các dữ liệu thô thành dữ liệu có cấu trúc và ngữ nghĩa.
 - Build dataset: Job build data set từ data đã chuẩn hoá, đánh điểm & label cho dữ liệu, phân chia tập test / training.
 - Build model: Build Deep Learning model từ dataset.
-- Serving: Model build xong sẽ được deploy & config manually lên server thông qua API internal. Model sẽ được preload trước và index vào trong FAISS - để hỗ trợ query nearest neighbour vector trong n-dimension space. Model được dùng để:
-	+ Lấy danh sách video phù hợp với user
-	+ Lấy danh sách video tương tự với seed video
-	+ Lấy dánh sách user tương đồng với một user
+  - Serving: Model build xong sẽ được deploy & config manually lên server thông qua API internal. Model sẽ được preload trước và index vào trong FAISS - để hỗ trợ query nearest neighbour vector trong n-dimension space. Model được dùng để:
+  	+ Lấy danh sách video phù hợp với user
+  	+ Lấy danh sách video tương tự với seed video
+  	+ Lấy dánh sách user tương đồng với một user
 
 ### Data Collecting Service:
 - Collect các event cần thiết cho việc suggest video và lưu vào DB, hiện tại gồm:
@@ -44,7 +44,7 @@
 	- freshness: video uploaded recently, coeff differently between categories
 	- interested: matched with user implicit / explicit interests
 	- penalties: video that have been watched / suggested recently will got penalty score
-- Trả về top n videos có điểm số cao nhất
+- Trả về top n videos có điểm số cao nhất
 
 ### Report Module:
 - Dữ liệu app events collect được sync lên GG BigQuery
