@@ -5,7 +5,7 @@ BFF service serves as the middle layer behind frontend, ensuring seamless commun
 
 ## Structure
 
-![BFF structure](https://i.imgur.com/sQctDmp.jpg)
+![BFF structure](https://i.imgur.com/Y9IHwM0.jpg)
 
 - **Dynamic Endpoints**: Empowering frontend developers to seamlessly integrate their service endpoints directly into BFF without the need for code updates.
 
@@ -18,8 +18,7 @@ BFF service serves as the middle layer behind frontend, ensuring seamless commun
 - **Full Monitoring**: Logging and monitoring are the only I/O intensive tasks, they wil be efficiently managed by external services through a lightweight Kafka connection, keeping the system fully monitored and optimized.
 
 ## GUI
-
-![BFF UI](https://i.imgur.com/sQctDmp.jpg)
+![BFF UI](https://i.imgur.com/v1txIeP.jpg)
 
 With a descriptive and intuitive frontend, BFF simplifies the configuration of each integrated service's API. Enhance your user experience and bid farewell to integration headaches.
 
